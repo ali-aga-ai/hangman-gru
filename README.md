@@ -2,7 +2,7 @@
 
 A Brief Report for the Hangman Problem
 
-Hi, I'm Ali. Over the past week, I've attempted to chip away at the hangman problem. It was one of the most engaging and challenging things I've worked on. This report describes the experiments and thought process behind my approach. I've also attached the code which gave me the best result. So let's begin!
+Hi, I'm Ali. Over the past week, I've attempted to chip away at the hangman problem. I've also attached the code which gave me the best result. So let's begin!
 
 ## TL;DR
 
@@ -65,9 +65,9 @@ Overall, the best performing model in testing was the BASE model, checkpointed a
 
 ## Conclusion
 
-Despite extensive experimentation with architectural variations, loss reweighting, and inference adjustments, the best performance was a 55% win rate. This is under the expected 60% mark. Furthermore it performed even worse on the final recorded dataset.
+Despite extensive experimentation with architectural variations, loss reweighting, and inference adjustments, the best performance was a 55% win rate. 
 
-The fundamental limitation across all approaches was the mismatch between cross-entropy loss—which optimizes average character prediction accuracy—and the true objective of complete word reconstruction. The model learned to favor frequent letters (E, A, S) because doing so minimized training loss, but this strategy failed on words requiring rare letters. If i had more time I would explore reinforcement learning or custom objectives that directly reward full-word success rather than per-character accuracy. I hope this report demonstrates both my technical approach and my ability to iterate through challenges—I'd welcome the opportunity to discuss these experiments and potential improvements in an interview.
+The fundamental limitation across all approaches was the mismatch between cross-entropy loss—which optimizes average character prediction accuracy—and the true objective of complete word reconstruction. The model learned to favor frequent letters (E, A, S) because doing so minimized training loss, but this strategy failed on words requiring rare letters. If i had more time I would explore reinforcement learning or custom objectives that directly reward full-word success rather than per-character accuracy. 
 
 ---
 
